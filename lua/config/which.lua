@@ -23,7 +23,7 @@ require("which-key").setup({
 	},
 	-- add operators that will trigger motion and text object completion
 	-- to enable all native operators, set the preset / operators plugin above
-	operators = { gc = "Comments" },
+	operators = { op = "Comments" },
 	key_labels = {
 		-- override the label used to display some keys. It doesn't effect WK in any other way.
 		-- For example:
@@ -268,7 +268,7 @@ wk.register({
     name = "Test",
     n = { "<cmd>TestNearest<cr>", "Test Nearest" },
     f = { "<cmd>TestFile<cr>", "Test Whole File" },
-    l = { "<cmd>TestFile<cr>", "Test Last" },
+    l = { "<cmd>TestLast<cr>", "Test Last" },
   },
 	w = {
 		name = "Window",
